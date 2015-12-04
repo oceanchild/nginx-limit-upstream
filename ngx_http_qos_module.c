@@ -116,7 +116,8 @@ static void
 static ngx_rbtree_node_t *
     ngx_http_limit_upstream_rbtree_lookup(ngx_rbtree_t *rbtree,
     unsigned long addr, unsigned short port);
-
+    
+extern void ngx_http_upstream_connect(ngx_http_request_t *r, ngx_http_upstream_t *u);
 
 static ngx_command_t ngx_http_limit_upstream_commands[] = {
 
